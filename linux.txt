@@ -1,0 +1,30 @@
+man手册的不同分类
+1、Standard commands （标准命令）
+2、System calls （系统调用）
+3、Library functions （库函数）
+4、Special devices （设备说明）
+5、File formats （文件格式）
+6、Games and toys （游戏和娱乐）
+7、Miscellaneous （杂项）
+8、Administrative Commands （管理员命令）
+9 其他（Linux特定的）， 用来存放内核例行程序的文档。
+文件io open/write O_RDWR--读写 O_RDONLY--只读  O_WRONLY--只写
+O_CREAT 若文件不存在则创建他
+O_EXCL 若已指定O_CREAT，且文件已存在，则出错
+O_APPEND 每次写入都在文件的末端
+O_TRUNC 打开文件时，如果文件是有内容的，且为只读或者只写，则将内容的长度截短为0
+后缀是gz的 解压缩 tar -xzvf  压缩至 tar -czvf
+后缀是bz2的 解压缩 tar xjf 压缩至 tar cvf 
+后缀是7z的安装7z后进行解压 sudo apt-get install p7zip
+
+x解压 z使用gzip属性,即需要用 gzip 压缩 J有bz2属性,即需要用 bzip2 压缩
+-f: 使用档案名字，切记，这个参数是最后一个参数，后面只能接档案名
+c creat产生一个压缩包用于压缩文件
+编译三部曲 mdkir /home/book/tools/wenjianming
+ ./configure --host=arm-buildroot-linux-gnueabihf --prefix=/home/book/tools/
+make && make install
+工具链目录/home/book/100ask_stm32mp157_pro-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/arm-buildroot-linux-gnueabihf/sysroot/usr/
+arm-buildroot-linux-gnueabihf工具链的头文件目录是/home/book/100ask_stm32mp157_pro-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/arm-buildroot-linux-gnueabihf/sysroot/usr/include
+其库文件的目录是/home/book/100ask_stm32mp157_pro-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/arm-buildroot-linux-gnueabihf/sysroot/usr/lib/
+查看攻击链的头文件和库文件echo 'main(){}'| arm-buildroot-linux-gnueabihf-gcc -E -v -
+mips-linux-gnu-gcc工具链的库文件目录是 /usr/lib 头文件的目录是/usr/include

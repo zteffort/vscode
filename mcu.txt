@@ -1,0 +1,21 @@
+挂载nfs： mount -t nfs -o nolock,vers=3 192.168.5.11:/home/book/nfs_rootfs /mnt
+mount -t nfs -o nolock,vers=3 192.168.5.11:/home/book/tools /mnt
+mount -t nfs -o nolock,vers=3 port= 2049 mount=9999 192.168.1.5:/home/book/ /mnt
+编译器：stm32mp157 ：arm-buildroot-linux-gnueabihf-gcc
+君正：arm-linux-gnu-gcc
+freetype后缀：在编译后面加上-lfreetype
+虚拟机ip：192.168.5.11
+windows ip：192.168.5.10
+开发板ip：192.168.5.9
+挂载：mount 原始目录+被挂载目录 加上-t 表示指定档案系统的态型，通常不用表示，mount会自己自动选择合适的态型
+开发板用户名：root 密码123456
+ubuntu用户名：book 密码：123456
+用filezilla挂载网关：22			
+关闭gui：systemctl stop myir 打开 改stop为start
+关闭呼吸灯的默认闪烁 echo none > /sys/class/leds/heartbeat/trigger    - -往呼吸灯寄存器里写入0关闭
+
+	
+
+
+				
+
