@@ -1,10 +1,11 @@
 #include <sys/types.h>
 #include <sys/stat.h>
+#include<unistd.h>
 #include <fcntl.h>
 #include<stdio.h>
 int main(int argc,char **argv){
     int fd_old,fd_new;
-    char buf[100];
+    char buf[1024];
     int len;
     if(argc !=3){
     printf("%sUsge:<oldfile> <newfile>",argv[0]);
@@ -23,7 +24,7 @@ int main(int argc,char **argv){
         printf("cann't open\n");
         return -1;
     }
-    while(len=read(fd_old,buf,1024)>0){
+    while((len=read(fd_old,buf,1024))>0){
         if(write(fd_new,buf,len)!=len){
             printf("can't copy\n");
         }
