@@ -1,0 +1,7 @@
+10:05:27 **** 项目test1配置Debug的重新构建 ****
+信息：构建使用了内部构建器
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o shuzu.o "..\\shuzu.c" 
+gcc -o test1.exe shuzu.o 
+
+10:05:28 构建完成。 0错误，0警告。(使用892ms)
+

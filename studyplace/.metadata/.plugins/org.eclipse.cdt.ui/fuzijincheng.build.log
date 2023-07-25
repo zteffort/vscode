@@ -1,0 +1,15 @@
+15:34:08 **** 项目fuzijincheng配置Debug的重新构建 ****
+信息：构建使用了内部构建器
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o huitiaohanshu.o "..\\huitiaohanshu.c" 
+..\huitiaohanshu.c: In function 'main':
+..\huitiaohanshu.c:26:24: error: 'EXIT_FAILTURE' undeclared (first use in this function); did you mean 'EXIT_FAILURE'?
+   26 |                 return EXIT_FAILTURE;
+      |                        ^~~~~~~~~~~~~
+      |                        EXIT_FAILURE
+..\huitiaohanshu.c:26:24: note: each undeclared identifier is reported only once for each function it appears in
+..\huitiaohanshu.c:29:12: error: 'i\U0000ff01' undeclared (first use in this function)
+   29 |         if(i锛?=0)
+      |            ^~~
+
+15:34:09 构建失败。 2 错误，0 警告。 (使用105ms)
+

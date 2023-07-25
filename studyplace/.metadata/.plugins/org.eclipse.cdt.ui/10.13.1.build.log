@@ -1,0 +1,36 @@
+15:33:48 **** 项目10.13.1配置Debug的重新构建 ****
+信息：构建使用了内部构建器
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o 2.o "..\\2.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o 3.o "..\\3.c" 
+..\3.c: In function 'sum':
+..\3.c:27:9: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+   27 |         for(i=0;i<n;i++)
+      |         ^~~
+..\3.c:29:17: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+   29 |                 printf("ar鏁扮粍鐨勫瓧鑺備釜鏁版槸%zd",sizeof ar);
+      |                 ^~~~~~
+..\3.c:29:55: warning: 'sizeof' on array function parameter 'ar' will return size of 'int *' [-Wsizeof-array-argument]
+   29 |                 printf("ar鏁扮粍鐨勫瓧鑺備釜鏁版槸%zd",sizeof ar);
+      |                                                       ^~
+..\3.c:23:13: note: declared here
+   23 | int sum(int ar[],int n)//缁熻ar鏁扮粍瀛楄妭涓暟
+      |         ~~~~^~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o 4.o "..\\4.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o 5.o "..\\5.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o 6.o "..\\6.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o 1.o "..\\1.c" 
+gcc -o 10.13.1.exe 1.o 2.o 3.o 4.o 5.o 6.o 
+D:/msys2/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: 2.o: in function `main':
+D:/eclipse/studyplace/10.13.1/Debug/../2.c:9: multiple definition of `main'; 1.o:D:/eclipse/studyplace/10.13.1/Debug/../1.c:6: first defined here
+D:/msys2/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: 3.o: in function `main':
+D:/eclipse/studyplace/10.13.1/Debug/../3.c:12: multiple definition of `main'; 1.o:D:/eclipse/studyplace/10.13.1/Debug/../1.c:6: first defined here
+D:/msys2/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: 4.o: in function `main':
+D:/eclipse/studyplace/10.13.1/Debug/../4.c:12: multiple definition of `main'; 1.o:D:/eclipse/studyplace/10.13.1/Debug/../1.c:6: first defined here
+D:/msys2/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: 5.o: in function `main':
+D:/eclipse/studyplace/10.13.1/Debug/../5.c:10: multiple definition of `main'; 1.o:D:/eclipse/studyplace/10.13.1/Debug/../1.c:6: first defined here
+D:/msys2/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: 6.o: in function `main':
+D:/eclipse/studyplace/10.13.1/Debug/../6.c:12: multiple definition of `main'; 1.o:D:/eclipse/studyplace/10.13.1/Debug/../1.c:6: first defined here
+collect2.exe: error: ld returned 1 exit status
+
+15:33:49 构建失败。 10 错误，2 警告。 (使用1s.136ms)
+

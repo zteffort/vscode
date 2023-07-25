@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="将资源“8.11.1/1.c”重命名为“tongjizifu.c”" description="重命名资源“1.c”" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="1.c" name="tongjizifu.c" stamp="1684476756509" updateReferences="true"/>
+</session>

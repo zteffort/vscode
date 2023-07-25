@@ -1,0 +1,11 @@
+15:34:07 **** 项目cpwenjian配置Debug的重新构建 ****
+信息：构建使用了内部构建器
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o cpwenjian.o "..\\cpwenjian.c" 
+..\cpwenjian.c: In function 'main':
+..\cpwenjian.c:40:32: warning: too many arguments for format [-Wformat-extra-args]
+   40 |                 fprintf(stderr,"cannot close the files",filename);
+      |                                ^~~~~~~~~~~~~~~~~~~~~~~~
+gcc -o cpwenjian.exe cpwenjian.o 
+
+15:34:07 构建完成。 0错误，1警告。(使用379ms)
+

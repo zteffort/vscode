@@ -1,0 +1,14 @@
+15:34:00 **** 项目7.12.6配置Debug的重新构建 ****
+信息：构建使用了内部构建器
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o 6.o "..\\6.c" 
+..\6.c: In function 'main':
+..\6.c:14:21: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+   14 |                  if(ch='e')
+      |                     ^~
+..\6.c:18:21: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+   18 |                  if(ch='i'&&i==1)
+      |                     ^~
+gcc -o 7.12.6.exe 6.o 
+
+15:34:01 构建完成。 0错误，2警告。(使用301ms)
+

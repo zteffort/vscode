@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="将资源“lianxi/lianxi”重命名为“lianxi.c”" description="重命名资源“lianxi”" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="lianxi" name="lianxi.c" stamp="1683768177980" updateReferences="true"/>
+</session>

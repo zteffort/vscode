@@ -1,0 +1,15 @@
+15:34:09 **** 项目kunkun配置Debug的重新构建 ****
+信息：构建使用了内部构建器
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o kun.o "..\\kun.c" 
+..\kun.c: In function 'mian':
+..\kun.c:12:1: warning: control reaches end of non-void function [-Wreturn-type]
+   12 | }
+      | ^
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o mainkun.o "..\\mainkun.c" 
+..\mainkun.c:8:9: fatal error: sys/wait.h: No such file or directory
+    8 | #include<sys/wait.h>
+      |         ^~~~~~~~~~~~
+compilation terminated.
+
+15:34:10 构建失败。 1 错误，1 警告。 (使用252ms)
+

@@ -1,0 +1,27 @@
+15:33:56 **** 项目5.11.2配置Debug的重新构建 ****
+信息：构建使用了内部构建器
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o 2.o "..\\2.c" 
+..\2.c: In function 'main':
+..\2.c:12:17: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'int' [-Wformat=]
+   12 |         scanf("%d",num);
+      |                ~^  ~~~
+      |                 |  |
+      |                 |  int
+      |                 int *
+..\2.c:16:26: warning: format '%d' expects argument of type 'int', but argument 2 has type 'int *' [-Wformat=]
+   16 |                 printf("%d",&num);
+      |                         ~^  ~~~~
+      |                          |  |
+      |                          |  int *
+      |                          int
+      |                         %n
+..\2.c:12:9: warning: 'num' is used uninitialized [-Wuninitialized]
+   12 |         scanf("%d",num);
+      |         ^~~~~~~~~~~~~~~
+..\2.c:10:19: note: 'num' declared here
+   10 |         int count,num;
+      |                   ^~~
+gcc -o 5.11.2.exe 2.o 
+
+15:33:56 构建完成。 0错误，3警告。(使用305ms)
+

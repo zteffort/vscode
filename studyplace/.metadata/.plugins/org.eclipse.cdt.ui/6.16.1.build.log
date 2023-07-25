@@ -1,0 +1,25 @@
+15:33:57 **** 项目6.16.1配置Debug的重新构建 ****
+信息：构建使用了内部构建器
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o 1.o "..\\1.c" 
+..\1.c: In function 'main':
+..\1.c:16:26: warning: format '%c' expects a matching 'int' argument [-Wformat=]
+   16 |                 printf("%c,ch[index]");
+      |                         ~^
+      |                          |
+      |                          int
+..\1.c:18:16: warning: passing argument 1 of 'printf' makes pointer from integer without a cast [-Wint-conversion]
+   18 |         printf('\n');
+      |                ^~~~
+      |                |
+      |                int
+In file included from ..\1.c:7:
+D:/msys2/ucrt64/include/stdio.h:505:48: note: expected 'const char * restrict' but argument is of type 'int'
+  505 |   int __cdecl printf(const char * __restrict__ _Format,...);
+      |                      ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+..\1.c:11:14: warning: variable 'ch' set but not used [-Wunused-but-set-variable]
+   11 |         char ch[size];
+      |              ^~
+gcc -o 6.16.1.exe 1.o 
+
+15:33:57 构建完成。 0错误，3警告。(使用324ms)
+

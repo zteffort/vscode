@@ -1,0 +1,20 @@
+15:33:53 **** 项目123配置Debug的重新构建 ****
+信息：构建使用了内部构建器
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o jincheng.o "..\\jincheng.c" 
+..\jincheng.c: In function 'main':
+..\jincheng.c:6:19: warning: implicit declaration of function 'fork' [-Wimplicit-function-declaration]
+    6 |         pid_t pid=fork();
+      |                   ^~~~
+..\jincheng.c:17:49: warning: format '%d' expects argument of type 'int', but argument 2 has type 'pid_t' {aka 'long long int'} [-Wformat=]
+   17 |                 printf("鐖惰繘绋嬭繑鍥炲瓙杩涚▼鐨刾id锛?%d锛岃淇℃伅姘歌繙鍦ㄧ埗杩涚▼涓緭鍑?",pid);
+      |                                                ~^                            ~~~
+      |                                                 |                            |
+      |                                                 int                          pid_t {aka long long int}
+      |                                                %lld
+gcc -o 123.exe jincheng.o 
+D:/msys2/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: jincheng.o: in function `main':
+D:/eclipse/studyplace/123/Debug/../jincheng.c:6: undefined reference to `fork'
+collect2.exe: error: ld returned 1 exit status
+
+15:33:54 构建失败。 2 错误，2 警告。 (使用422ms)
+

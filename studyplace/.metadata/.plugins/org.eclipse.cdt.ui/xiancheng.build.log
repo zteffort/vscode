@@ -1,0 +1,20 @@
+15:34:12 **** 项目xiancheng配置Debug的重新构建 ****
+信息：构建使用了内部构建器
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o xiancheng.o "..\\xiancheng.c" 
+..\xiancheng.c:16:1: warning: "/*" within comment [-Wcomment]
+   16 | /*寰呯嚎绋?
+      |  
+..\xiancheng.c:7:1: error: unknown type name '\U00007ebf\U00007a0b\U000076f8\U00005173\U000063a5\U000053e3\U000051fd\U00006570pthred_t\U00006570\U0000636e\U00007c7b\U0000578b'
+    7 | 绾跨▼鐩稿叧鎺ュ彛鍑芥暟pthred_t鏁版嵁绫诲瀷
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from D:/msys2/ucrt64/include/_mingw.h:282,
+                 from D:/msys2/ucrt64/include/corecrt.h:10,
+                 from D:/msys2/ucrt64/include/corecrt_stdio_config.h:10,
+                 from D:/msys2/ucrt64/include/stdio.h:9,
+                 from ..\xiancheng.c:38:
+D:/msys2/ucrt64/include/vadefs.h:14:9: error: expected '=', ',', ';', 'asm' or '__attribute__' before '#pragma'
+   14 | #pragma pack(push,_CRT_PACKING)
+      |         ^~~~
+
+15:34:12 构建失败。 2 错误，1 警告。 (使用159ms)
+

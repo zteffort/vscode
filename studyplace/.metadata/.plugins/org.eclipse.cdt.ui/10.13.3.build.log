@@ -1,0 +1,14 @@
+15:33:50 **** 项目10.13.3配置Debug的重新构建 ****
+信息：构建使用了内部构建器
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o 3.o "..\\3.c" 
+..\3.c: In function 'find_max':
+..\3.c:37:1: error: expected declaration or statement at end of input
+   37 | }
+      | ^
+..\3.c: At top level:
+..\3.c:30:6: warning: 'show_array' defined but not used [-Wunused-function]
+   30 | void show_array(const int a[], int n)
+      |      ^~~~~~~~~~
+
+15:33:50 构建失败。 1 错误，1 警告。 (使用105ms)
+

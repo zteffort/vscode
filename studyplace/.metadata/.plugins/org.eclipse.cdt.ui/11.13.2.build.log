@@ -1,0 +1,11 @@
+15:33:52 **** 项目11.13.2配置Debug的重新构建 ****
+信息：构建使用了内部构建器
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o 2.o "..\\2.c" 
+..\2.c: In function 'main':
+..\2.c:46:11: warning: suggest explicit braces to avoid ambiguous 'else' [-Wdangling-else]
+   46 |         if(a>b)
+      |           ^
+gcc -o 11.13.2.exe 2.o 
+
+15:33:52 构建完成。 0错误，1警告。(使用378ms)
+

@@ -1,0 +1,55 @@
+15:34:08 **** 项目duojincheng配置Debug的重新构建 ****
+信息：构建使用了内部构建器
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o d.o "..\\d.c" 
+..\d.c: In function 'main':
+..\d.c:18:27: warning: initialization of 'char' from 'char *' makes integer from pointer without a cast [-Wint-conversion]
+   18 |         char buff[64],cmd="exit";
+      |                           ^~~~~~
+..\d.c:19:12: warning: implicit declaration of function 'pipe'; did you mean '_pipe'? [-Wimplicit-function-declaration]
+   19 |         if(pipe(fd))
+      |            ^~~~
+      |            _pipe
+..\d.c:25:13: warning: implicit declaration of function 'fork' [-Wimplicit-function-declaration]
+   25 |         pid=fork();
+      |             ^~~~
+..\d.c:36:27: warning: passing argument 2 of 'strcmp' makes pointer from integer without a cast [-Wint-conversion]
+   36 |         if(0==strcmp(buff,cmd))
+      |                           ^~~
+      |                           |
+      |                           char
+In file included from D:/msys2/ucrt64/include/io.h:10,
+                 from D:/msys2/ucrt64/include/sys/stat.h:14,
+                 from ..\d.c:7:
+D:/msys2/ucrt64/include/string.h:63:52: note: expected 'const char *' but argument is of type 'char'
+   63 |   int __cdecl strcmp(const char *_Str1,const char *_Str2);
+      |                                        ~~~~~~~~~~~~^~~~~
+..\d.c:44:66: warning: format '%d' expects argument of type 'int', but argument 2 has type 'pid_t' {aka 'long long int'} [-Wformat=]
+   44 |                         printf("parent pocess!child pocess id is%d\n!",pid);
+      |                                                                 ~^     ~~~
+      |                                                                  |     |
+      |                                                                  int   pid_t {aka long long int}
+      |                                                                 %lld
+..\d.c:48:48: warning: passing argument 1 of 'strlen' makes pointer from integer without a cast [-Wint-conversion]
+   48 |                         write(fd[1],cmd,strlen(cmd)+1);
+      |                                                ^~~
+      |                                                |
+      |                                                char
+D:/msys2/ucrt64/include/string.h:64:37: note: expected 'const char *' but argument is of type 'char'
+   64 |   size_t __cdecl strlen(const char *_Str);
+      |                         ~~~~~~~~~~~~^~~~
+..\d.c:48:37: warning: passing argument 2 of 'write' makes pointer from integer without a cast [-Wint-conversion]
+   48 |                         write(fd[1],cmd,strlen(cmd)+1);
+      |                                     ^~~
+      |                                     |
+      |                                     char
+D:/msys2/ucrt64/include/io.h:346:49: note: expected 'const void *' but argument is of type 'char'
+  346 |   int __cdecl write(int _Filehandle,const void *_Buf,unsigned int _MaxCharCount) __MINGW_ATTRIB_DEPRECATED_MSVC2005;
+      |                                     ~~~~~~~~~~~~^~~~
+gcc -o duojincheng.exe d.o 
+D:/msys2/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: d.o: in function `main':
+D:/eclipse/studyplace/duojincheng/Debug/../d.c:19: undefined reference to `pipe'
+D:/msys2/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: D:/eclipse/studyplace/duojincheng/Debug/../d.c:25: undefined reference to `fork'
+collect2.exe: error: ld returned 1 exit status
+
+15:34:08 构建失败。 3 错误，7 警告。 (使用415ms)
+

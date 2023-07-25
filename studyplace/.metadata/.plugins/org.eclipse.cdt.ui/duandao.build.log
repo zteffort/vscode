@@ -1,0 +1,10 @@
+15:34:07 **** 项目duandao配置Debug的重新构建 ****
+信息：构建使用了内部构建器
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o gaundao.o "..\\gaundao.c" 
+..\gaundao.c:8:9: fatal error: stbild.h: No such file or directory
+    8 | #include<stbild.h>
+      |         ^~~~~~~~~~
+compilation terminated.
+
+15:34:07 构建失败。 1 错误，0 警告。 (使用104ms)
+

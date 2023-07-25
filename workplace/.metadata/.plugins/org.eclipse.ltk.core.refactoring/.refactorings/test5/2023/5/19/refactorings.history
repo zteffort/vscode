@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="将资源“test5/duxie”重命名为“duxie.c”" description="重命名资源“duxie”" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="duxie" name="duxie.c" stamp="1683600497543" updateReferences="true"/>
+</session>

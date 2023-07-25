@@ -1,0 +1,19 @@
+15:34:09 **** 项目jincheng配置Debug的重新构建 ****
+信息：构建使用了内部构建器
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o fuzijincheng.o "..\\fuzijincheng.c" 
+..\fuzijincheng.c: In function 'main':
+..\fuzijincheng.c:18:15: warning: implicit declaration of function 'pipe'; did you mean '_pipe'? [-Wimplicit-function-declaration]
+   18 |         if(0!=pipe(fd)){
+      |               ^~~~
+      |               _pipe
+..\fuzijincheng.c:22:13: warning: implicit declaration of function 'fork' [-Wimplicit-function-declaration]
+   22 |         pid=fork();
+      |             ^~~~
+gcc -o jincheng.exe fuzijincheng.o 
+D:/msys2/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: fuzijincheng.o: in function `main':
+D:/eclipse/studyplace/jincheng/Debug/../fuzijincheng.c:18: undefined reference to `pipe'
+D:/msys2/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: D:/eclipse/studyplace/jincheng/Debug/../fuzijincheng.c:22: undefined reference to `fork'
+collect2.exe: error: ld returned 1 exit status
+
+15:34:09 构建失败。 3 错误，2 警告。 (使用355ms)
+

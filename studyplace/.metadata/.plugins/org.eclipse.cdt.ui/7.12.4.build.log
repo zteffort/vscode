@@ -1,0 +1,11 @@
+15:34:00 **** 项目7.12.4配置Debug的重新构建 ****
+信息：构建使用了内部构建器
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o 4.o "..\\4.c" 
+..\4.c: In function 'main':
+..\4.c:23:33: warning: multi-character character constant [-Wmultichar]
+   23 |                         putchar('!!');
+      |                                 ^~~~
+gcc -o 7.12.4.exe 4.o 
+
+15:34:00 构建完成。 0错误，1警告。(使用311ms)
+

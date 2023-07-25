@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="将资源“9.11.1/1”重命名为“1.C”" description="重命名资源“1”" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="1" name="1.C" stamp="1684483383209" updateReferences="true"/>&#x0A;<refactoring comment="将资源“9.11.1/1.C”重命名为“hanshu1.c”" description="重命名资源“1.C”" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="1.C" name="hanshu1.c" stamp="1684483441776" updateReferences="true"/>
+</session>

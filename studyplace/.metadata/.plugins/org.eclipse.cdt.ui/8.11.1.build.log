@@ -1,0 +1,7 @@
+15:34:01 **** 项目8.11.1配置Debug的重新构建 ****
+信息：构建使用了内部构建器
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o tongjizifu.o "..\\tongjizifu.c" 
+gcc -o 8.11.1.exe tongjizifu.o 
+
+15:34:01 构建完成。 0错误，0警告。(使用305ms)
+

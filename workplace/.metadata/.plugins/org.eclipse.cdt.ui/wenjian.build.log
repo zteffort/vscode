@@ -1,0 +1,16 @@
+11:00:17 **** 项目wenjian配置Debug的增量构建 ****
+信息：构建使用了内部构建器
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o 1.o "..\\1.c" 
+..\1.c: In function 'main':
+..\1.c:22:16: error: expected expression before ')' token
+   22 |         while ()
+      |                ^
+..\1.c:22:9: warning: this 'while' clause does not guard... [-Wmisleading-indentation]
+   22 |         while ()
+      |         ^~~~~
+..\1.c:23:29: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'while'
+   23 |                 putchar(ch);ch=getchar()!=EOF;
+      |                             ^~
+
+11:00:17 构建失败。 1 错误，1 警告。 (使用152ms)
+

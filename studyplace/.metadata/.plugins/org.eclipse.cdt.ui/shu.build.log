@@ -1,0 +1,7 @@
+15:34:11 **** 项目shu配置Debug的重新构建 ****
+信息：构建使用了内部构建器
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o shu.o "..\\shu.c" 
+gcc -o shu.exe shu.o 
+
+15:34:11 构建完成。 0错误，0警告。(使用305ms)
+

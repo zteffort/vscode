@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="将资源“test4/maopaosuanfa.c”重命名为“maopaosuanfa.cpp”" description="重命名资源“maopaosuanfa.c”" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="maopaosuanfa.c" name="maopaosuanfa.cpp" stamp="1684114499509" updateReferences="true"/>&#x0A;<refactoring comment="将资源“test4/maopaoshufa.cpp”重命名为“maopaoshufa.c”" description="重命名资源“maopaoshufa.cpp”" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="maopaoshufa.cpp" name="maopaoshufa.c" stamp="1684114666800" updateReferences="true"/>
+</session>

@@ -1,0 +1,21 @@
+15:33:57 **** 项目5.11.9配置Debug的重新构建 ****
+信息：构建使用了内部构建器
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o 9.o "..\\9.c" 
+..\9.c: In function 'main':
+..\9.c:15:17: warning: implicit declaration of function 'Temperature'; did you mean 'Temperatures'? [-Wimplicit-function-declaration]
+   15 |                 Temperature(fah);
+      |                 ^~~~~~~~~~~
+      |                 Temperatures
+..\9.c:11:24: warning: unused variable 'kai' [-Wunused-variable]
+   11 |         double she,fah,kai;
+      |                        ^~~
+..\9.c:11:16: warning: unused variable 'she' [-Wunused-variable]
+   11 |         double she,fah,kai;
+      |                ^~~
+..\9.c: At top level:
+..\9.c:23:1: error: expected identifier or '(' before '{' token
+   23 | {
+      | ^
+
+15:33:57 构建失败。 1 错误，3 警告。 (使用199ms)
+

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="将资源“test8/xunhuan”重命名为“xunhuan.c”" description="重命名资源“xunhuan”" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="xunhuan" name="xunhuan.c" stamp="1683618401402" updateReferences="true"/>
+</session>

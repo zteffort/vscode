@@ -1,0 +1,9 @@
+15:34:10 **** 项目makefile配置Debug的重新构建 ****
+信息：构建使用了内部构建器
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o jisuan.o "..\\jisuan.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o hello.o "..\\hello.c" 
+gcc -o makefile.exe hello.o jisuan.o main.o 
+
+15:34:10 构建完成。 0错误，0警告。(使用669ms)
+

@@ -1,0 +1,14 @@
+17:56:42 **** 项目test9配置Debug的增量构建 ****
+信息：构建使用了内部构建器
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o maopaosuanfa.o "..\\maopaosuanfa.c" 
+..\maopaosuanfa.c: In function 'main':
+..\maopaosuanfa.c:10:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   10 | {
+      | ^
+..\maopaosuanfa.c:17:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   17 | {
+      | ^
+..\maopaosuanfa.c:45: error: expected '{' at end of input
+
+17:56:43 构建失败。 3 错误，0 警告。 (使用765ms)
+

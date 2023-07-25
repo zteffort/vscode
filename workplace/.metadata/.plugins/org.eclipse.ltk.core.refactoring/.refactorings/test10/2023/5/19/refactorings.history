@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="将资源“test10/jishufadedayin”重命名为“jishufadedayin.c”" description="重命名资源“jishufadedayin”" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="jishufadedayin" name="jishufadedayin.c" stamp="1683765030871" updateReferences="true"/>
+</session>

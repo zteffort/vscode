@@ -1,0 +1,17 @@
+15:34:01 **** 项目8.11.2配置Debug的重新构建 ****
+信息：构建使用了内部构建器
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o lunliiushuruzifu.o "..\\lunliiushuruzifu.c" 
+..\lunliiushuruzifu.c: In function 'main':
+..\lunliiushuruzifu.c:26:25: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+   26 |                 else if(ch[i]='\t')
+      |                         ^~
+..\lunliiushuruzifu.c:32:40: warning: unknown conversion type character '\x09' in format [-Wformat=]
+   32 |                         printf("%c-%-8. d",ch[i],ch[i]);
+      |                                        ^
+..\lunliiushuruzifu.c:32:32: warning: too many arguments for format [-Wformat-extra-args]
+   32 |                         printf("%c-%-8. d",ch[i],ch[i]);
+      |                                ^~~~~~~~~~~
+gcc -o 8.11.2.exe lunliiushuruzifu.o 
+
+15:34:02 构建完成。 0错误，3警告。(使用311ms)
+

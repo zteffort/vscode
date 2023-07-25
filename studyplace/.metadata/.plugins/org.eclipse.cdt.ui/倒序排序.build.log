@@ -1,0 +1,7 @@
+15:34:12 **** 项目倒序排序配置Debug的重新构建 ****
+信息：构建使用了内部构建器
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o reverse.o "..\\reverse.c" 
+gcc -o 倒序排序.exe reverse.o 
+
+15:34:13 构建完成。 0错误，0警告。(使用321ms)
+

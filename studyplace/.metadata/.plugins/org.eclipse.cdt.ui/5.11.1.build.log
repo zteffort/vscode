@@ -1,0 +1,13 @@
+15:33:55 **** 项目5.11.1配置Debug的重新构建 ****
+信息：构建使用了内部构建器
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o 1.o "..\\1.c" 
+..\1.c: In function 'main':
+..\1.c:13:17: warning: format '%d' expects a matching 'int *' argument [-Wformat=]
+   13 |         scanf("%d,min");
+      |                ~^
+      |                 |
+      |                 int *
+gcc -o 5.11.1.exe 1.o 
+
+15:33:56 构建完成。 0错误，1警告。(使用320ms)
+

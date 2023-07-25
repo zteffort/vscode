@@ -1,0 +1,26 @@
+15:34:08 **** 项目duizhan配置Debug的重新构建 ****
+信息：构建使用了内部构建器
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o 1.o "..\\1.c" 
+..\1.c: In function 'main':
+..\1.c:9:9: error: unknown type name 'Stack'
+    9 |         Stack s;
+      |         ^~~~~
+..\1.c:10:13: error: expected identifier or '(' before '&' token
+   10 |         int(&s,10);
+      |             ^
+..\1.c:12:9: warning: implicit declaration of function 'push' [-Wimplicit-function-declaration]
+   12 |         push(&s,5);
+      |         ^~~~
+..\1.c:16:17: warning: implicit declaration of function 'pop'; did you mean 'popen'? [-Wimplicit-function-declaration]
+   16 |         int x = pop(&s);
+      |                 ^~~
+      |                 popen
+..\1.c:25:9: warning: implicit declaration of function 'destroy' [-Wimplicit-function-declaration]
+   25 |         destroy(&s);
+      |         ^~~~~~~
+..\1.c:30:12: warning: implicit declaration of function 'isOutOfStack' [-Wimplicit-function-declaration]
+   30 |         if(isOutOfStack(arr,brr,5)){
+      |            ^~~~~~~~~~~~
+
+15:34:08 构建失败。 2 错误，4 警告。 (使用104ms)
+

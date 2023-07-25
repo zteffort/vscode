@@ -1,0 +1,7 @@
+15:34:06 **** 项目copy配置Debug的重新构建 ****
+信息：构建使用了内部构建器
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o copy.o "..\\copy.c" 
+gcc -o copy.exe copy.o 
+
+15:34:07 构建完成。 0错误，0警告。(使用307ms)
+

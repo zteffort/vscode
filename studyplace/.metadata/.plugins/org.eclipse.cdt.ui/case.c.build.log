@@ -1,0 +1,7 @@
+15:34:06 **** 项目case.c配置Debug的重新构建 ****
+信息：构建使用了内部构建器
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o case.o "..\\case.c" 
+gcc -o case.c.exe case.o 
+
+15:34:06 构建完成。 0错误，0警告。(使用316ms)
+

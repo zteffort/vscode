@@ -1,0 +1,25 @@
+15:34:10 **** 项目shouhujinchengchuangjian配置Debug的重新构建 ****
+信息：构建使用了内部构建器
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o jincheng.o "..\\jincheng.c" 
+In file included from D:/msys2/ucrt64/include/_mingw.h:282,
+                 from D:/msys2/ucrt64/include/corecrt.h:10,
+                 from D:/msys2/ucrt64/include/corecrt_stdio_config.h:10,
+                 from D:/msys2/ucrt64/include/stdio.h:9,
+                 from ..\jincheng.c:32:
+D:/msys2/ucrt64/include/vadefs.h:14:9: error: expected '=', ',', ';', 'asm' or '__attribute__' before '#pragma'
+   14 | #pragma pack(push,_CRT_PACKING)
+      |         ^~~~
+..\jincheng.c: In function 'init_daemon':
+..\jincheng.c:66:17: warning: implicit declaration of function 'fork' [-Wimplicit-function-declaration]
+   66 |     pid_t pid = fork();      //鍒涘缓瀛愯繘绋?
+      |                 ^~~~
+..\jincheng.c:77:5: warning: implicit declaration of function 'setsid'; did you mean 'getpid'? [-Wimplicit-function-declaration]
+   77 |     setsid();               //璁╁瓙杩涚▼鑴辩鍘熸湰浼氳瘽
+      |     ^~~~~~
+      |     getpid
+..\jincheng.c:83:20: warning: implicit declaration of function 'getdtablesize' [-Wimplicit-function-declaration]
+   83 |     for(i = 0; i < getdtablesize(); i++)
+      |                    ^~~~~~~~~~~~~
+
+15:34:11 构建失败。 1 错误，3 警告。 (使用154ms)
+

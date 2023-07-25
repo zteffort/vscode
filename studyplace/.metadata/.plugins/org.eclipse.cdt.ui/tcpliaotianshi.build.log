@@ -1,0 +1,10 @@
+15:34:11 **** 项目tcpliaotianshi配置Debug的重新构建 ****
+信息：构建使用了内部构建器
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o xiangmu.o "..\\xiangmu.c" 
+gcc -o tcpliaotianshi.exe xiangmu.o 
+D:/msys2/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: D:/msys2/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../lib/libmingw32.a(lib64_libmingw32_a-crtexewin.o): in function `main':
+C:/M/B/src/mingw-w64/mingw-w64-crt/crt/crtexewin.c:70: undefined reference to `WinMain'
+collect2.exe: error: ld returned 1 exit status
+
+15:34:11 构建失败。 2 错误，0 警告。 (使用312ms)
+

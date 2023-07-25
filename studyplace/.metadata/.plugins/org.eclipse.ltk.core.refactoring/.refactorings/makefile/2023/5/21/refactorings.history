@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="将资源“10.13.1/9.c”重命名为“1.c”" description="重命名资源“9.c”" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="9.c" name="1.c" stamp="1684802829169" updateReferences="true"/>&#x0A;<refactoring comment="将资源“10.13.1/1.c”重命名为“main.c”" description="重命名资源“1.c”" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="1.c" name="main.c" stamp="1684808868223" updateReferences="true"/>&#x0A;<refactoring comment="将资源“10.13.1/jiafa.h”重命名为“jisuan.c”" description="重命名资源“jiafa.h”" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="jiafa.h" name="jisuan.c" stamp="1684809116424" updateReferences="true"/>
+</session>
